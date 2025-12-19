@@ -1,12 +1,9 @@
 # app.py
-from flask import Flask
 
-app = Flask(__name__)
+def add(a, b):
+    return a + b
 
-@app.route("/")
-def home():
-    return "Hello, Flask App!"
+result = add(10, 20)
+print("Sum is:", result)
 
-if __name__ == "__main__":
-    app.run(debug=True)
 
